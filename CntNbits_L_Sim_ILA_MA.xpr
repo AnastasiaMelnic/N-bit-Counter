@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/EMELNIAP8/Downloads/suka/CntNbits_L_Sim_ILA_MA/CntNbits_L_Sim_ILA_MA.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/EMELNIAP8/OneDrive - NTT DATA EMEAL/Documentos/GitHub/N-bit-Counter/CntNbits_L_Sim_ILA_MA.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d9fef6e98fea4cbcb0501985ecb26eff"/>
@@ -91,13 +91,19 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../IP_Repo/HDL/Divider.vhd">
+      <File Path="$PSRCDIR/sources_1/new/CntNbits_L_MA.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../IP_Repo/HDL/DivBlock.vhd">
+      <File Path="$PPRDIR/../../../../Downloads/IP_Repo/HDL/Divider.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../Downloads/IP_Repo/HDL/DivBlock.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -134,13 +140,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../temp/Vivado_WorkSpace/CntNbits_L_MA/CntNbits_L_MA.srcs/sources_1/new/CntNbits_L_MA.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Cnt4bits_ILA_MA_wrapper"/>
@@ -160,7 +159,7 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../IP_Repo/Sim_TB/Sim_CntNBits_L.vhd">
+      <File Path="$PPRDIR/../../../../Downloads/IP_Repo/Sim_TB/Sim_CntNBits_L.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
