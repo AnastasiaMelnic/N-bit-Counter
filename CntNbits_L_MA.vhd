@@ -52,10 +52,9 @@ architecture Behavioral of CntNbits_L_MA is
 
 constant LIMIT_VEC_MA: std_logic_vector(NUM_BITS_MA-1 downto 0):=std_logic_vector(to_unsigned(LIMIT_MA, NUM_BITS_MA));
 constant ZERO_VEC_MA: std_logic_vector(NUM_BITS_MA-1 downto 0):=std_logic_vector(to_unsigned(0,NUM_BITS_MA));
---pentru corectarea erorilor provocate de x"1"
 constant ONE_VEC_MA: std_logic_vector(NUM_BITS_MA-1 downto 0):=std_logic_vector(to_unsigned(1,NUM_BITS_MA));
 
---corectat Melnic Anastasia
+
 signal Q_intern_MA: STD_LOGIC_VECTOR(NUM_BITS_MA-1 downto 0):=ZERO_VEC_MA;
 --signal Q_intern_MA: STD_LOGIC_VECTOR(NUM_BITS_MA-1 downto 0):=x"0";
 
@@ -67,7 +66,6 @@ begin
 
 if rising_edge(CLK) then
 	if RESETn='0' then
-	--corectat Melnic Anastasia
 		Q_intern_MA<=ZERO_VEC_MA;
 		--Q_intern_MA<=x"0";
 	elsif Load_MA='1' then
@@ -79,11 +77,9 @@ if rising_edge(CLK) then
 	elsif CE_MA='1' then
 	   if UnD_MA='1' then
 	       if Q_intern_MA=LIMIT_VEC_MA then
-	           --corectat Melnic Anastasia
 	           Q_intern_MA<=ZERO_VEC_MA;
 	           --Q_intern_MA<=x"0";
 	       else
-	           --corectat Melnic Anastasia
 	           Q_intern_MA<=Q_intern_MA+ONE_VEC_MA;
 	           --Q_intern_MA<=Q_intern_MA+x"1";
 	       end if;
@@ -91,7 +87,6 @@ if rising_edge(CLK) then
 	       if Q_intern_MA=ZERO_VEC_MA then
 	           Q_intern_MA<=LIMIT_VEC_MA;
 	       else
-	           --corectat Melnic Anastasia
 	           Q_intern_MA<=Q_intern_MA-ONE_VEC_MA;
 	           --Q_intern_MA<=Q_intern_MA-x"1";
 	       end if;
