@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1739948792" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Cnt4bits_ILA_MA_wrapper.dcp">
+  <File Type="PA-TCL" Name="Cnt4bits_ILA_MA_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="Cnt4bits_ILA_MA_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Cnt4bits_ILA_MA_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="Cnt4bits_ILA_MA_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Cnt4bits_ILA_MA_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Cnt4bits_ILA_MA_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../temp/Vivado_WorkSpace/CntNbits_L_MA/CntNbits_L_MA.srcs/sources_1/new/CntNbits_L_MA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Downloads/IP_Repo/HDL/Divider.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Downloads/IP_Repo/HDL/DivBlock.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Cnt4bits_ILA_MA/Cnt4bits_ILA_MA.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/Cnt4bits_ILA_MA/hdl/Cnt4bits_ILA_MA_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Cnt4bits_ILA_MA_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Cnt4bits_ILA_MA_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_rst_clk_wiz_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_CntNbits_L_MA_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_Divblock_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Cnt4bits_ILA_MA_util_vector_logic_0_0"/>
+</GenRun>

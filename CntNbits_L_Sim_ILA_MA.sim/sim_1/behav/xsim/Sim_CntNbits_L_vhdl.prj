@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../../../temp/Vivado_WorkSpace/CntNbits_L_MA/CntNbits_L_MA.srcs/sources_1/new/CntNbits_L_MA.vhd" \
+"../../../../../../IP_Repo/Sim_TB/Sim_CntNBits_L.vhd" \
+
+# Do not sort compile order
+nosort
