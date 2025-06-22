@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Cnt4bits_ILA_MA": {
+			"proto_instances": {
+			}
+		}
+	}
+}
