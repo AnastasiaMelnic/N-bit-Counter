@@ -1,3 +1,0 @@
-# N-bit-Counter
-
-I designed a parametrizable N-bit counter in VHDL and implemented it in Vivado. It uses generic parameters to configure the number of bits and the counting limit. The input signals control reset, count enable, counting direction (up or down), and loading an external value (set via board switches). When the counter reaches its limit, a Terminal Count signal is set high and an LED is turned on. I also developed a frequency divider module with selectable division rates, allowing dynamic control over the counter’s clock frequency. I tested the design through simulation and on a Nexys A7-100T FPGA board.
