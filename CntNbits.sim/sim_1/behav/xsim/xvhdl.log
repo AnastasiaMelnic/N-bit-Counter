@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/temp/CntNbits_L_MA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CntNbits_L_MA'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/temp/Sim_CntNbits_L.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sim_CntNbits_L'
